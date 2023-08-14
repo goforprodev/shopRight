@@ -1,0 +1,7 @@
+{
+  "name": "shopRight",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
