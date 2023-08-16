@@ -14,6 +14,8 @@ Welcome to the **Awesome E-Commerce App**! This application is built using Ionic
 
 ## Overview
 
+![workflow1](https://github.com/goforprodev/shopRight/blob/master/WhatsApp%20Image%202023-08-16%20at%2015.34.05.jpeg)
+
 The Awesome E-Commerce App is a comprehensive showcase of front-end development skills. It utilizes the following technologies and features:
 
 - **Ionic Framework**: Building the user interface.
