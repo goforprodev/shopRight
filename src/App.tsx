@@ -1,7 +1,7 @@
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
+import { IonApp, IonContent, IonGrid, IonRouterOutlet, IonRow, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
+import "./index.css"
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -22,21 +22,57 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+// components
+import Navbar from './components/Navbar/Navbar';
+import Home from './pages/Home';
+import SearchPage from './pages/SearchPage';
+import ProductDetail from './pages/ProductDetail';
+
 setupIonicReact();
 
-const App: React.FC = () => (
+interface LayoutProps{
+  children: React.ReactNode
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => (
+  <>
+    <Navbar />
+  <IonContent >
+        <div className="content">
+          {children}
+        </div>
+      <div className="footer">
+      footer
+      </div>
+  </IonContent>
+  </>
+
+);
+
+const App: React.FC = () =>{
+  return(
   <IonApp>
     <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
+        <Layout>
+          <IonRouterOutlet>
+            <Route exact path="/home">
+              <Home />
+            </Route>
+             <Route exact path="/search">
+          <SearchPage />
+          </Route>
+             <Route exact path="/product/:productId">
+          <ProductDetail />
         </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
+            <Route exact path="/">
+              <Redirect to="/home" />
+            </Route>
+            {/* Add more routes as needed */}
+          </IonRouterOutlet>
+        </Layout>
     </IonReactRouter>
   </IonApp>
 );
+  }
 
 export default App;

@@ -1,0 +1,35 @@
+.cart-modal{
+  padding: 1em;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 100px;
+  margin: 10px 0;
+}
+
+.cart-item .cart-img {
+  /* max-width: 60px; */
+  margin-right: 10px;
+}
+
+.item-details {
+  flex-grow: 1;
+}
+
+.item-details h2 {
+  margin: 0;
+}
+
+.item-details IonText p {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.cart-item IonButton {
+  --padding-start: 5px;
+  --padding-end: 5px;
+}
+

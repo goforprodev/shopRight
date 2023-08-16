@@ -1,0 +1,24 @@
+.product-image {
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+}
+
+.product-title {
+  font-size: 1rem; /* Adjust font size as needed */
+  max-height: 3rem; /* Adjust max height to control text truncation */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-button{
+    margin:0 1rem 1rem 1rem;
+    background: orange !important;
+}
+
+@media screen and (max-width: 500px) {
+    .product-button{
+        margin:.5rem ;
+        font-size: .6rem;
+    }
+}

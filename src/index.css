@@ -1,0 +1,8 @@
+.app{
+    padding: 0 5rem;
+}
+
+.app-container{
+    max-width: 80vw;
+    margin: 0 auto;
+}

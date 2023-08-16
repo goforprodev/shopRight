@@ -1,0 +1,10 @@
+
+.search{
+  padding: 1rem;
+}
+
+/* Optional: Add a shadow to the curved header */
+.curved-header-shadow {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+}
+
