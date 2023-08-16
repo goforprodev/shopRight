@@ -84,10 +84,3 @@ The project follows a structured folder organization to keep the codebase organi
 5. During checkout, provide guest user information.
 6. Receive a confirmation message upon successful checkout.
 
-## Contributing
-
-Contributions to this project are welcome! If you have any improvements or suggestions, feel free to submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
