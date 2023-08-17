@@ -15,9 +15,6 @@ const GuestCheckout: React.FC = () => {
   const cartItems = useSelector((state:RootState) => state.cart);
 
   const handleCheckout = () => {
-    // Perform checkout logic here (e.g., send order to server)
-    // After successful checkout, clear the cart and show a confirmation message
-    if(cartItems.length === 0){
         alert('Please add items to cart');
         if( name === '' || email === '' || address === ''){
             alert('Please fill all the fields');
