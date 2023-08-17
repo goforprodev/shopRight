@@ -1,4 +1,4 @@
-// src/components/ProductCard.tsx
+
 import React from 'react';
 import { IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonImg, IonCol, IonButton } from '@ionic/react';
 import "./ProductCard.css"
